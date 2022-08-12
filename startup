@@ -1,0 +1,5 @@
+#!/bin/sh
+# SWIM Startup Script
+# Everything that you want to be ran upon starting SWIM goes here.
+picom -b
+feh --no-fehbg --bg-scale '/usr/share/lxqt/wallpapers/Valendas.png'
