@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=SWIM
+Comment=A simple, dynamic, tiling window manager written in rust with penrose.
+Exec=swim
+TryExec=swim
+Type=Application
+X-LightDM-DesktopName=SWIM
+DesktopNames=SWIM
+Keywords=dynamic;tiling;wm;windowmanager;window;manager;rust;penrose;
