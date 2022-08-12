@@ -1,2 +1,2 @@
-# SWIM
-The SWIM Window Manager Project
+# SWIM (Simple WIndow Manager)
+The SWIM Project
