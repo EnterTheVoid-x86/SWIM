@@ -1,0 +1,4 @@
+#!/bin/bash
+# SWIM Keybinds Helper
+# This script opens an ST window and states what the keybinds of SWIM are.
+st -e keybinds
