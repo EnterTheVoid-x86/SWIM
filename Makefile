@@ -25,5 +25,5 @@ install:
 all: build install
  
 help:
-	@echo "Make sure you have Picom, ST, dmenu-run, feh, and rust installed to use the default configuration for SWIM."
+	@echo "Make sure you have Picom, ST, dmenu-run, feh, pavucontrol-qt, and rust installed to use the default configuration for SWIM."
 	@echo "usage: make [debug=1]"
