@@ -1,6 +1,6 @@
 [package]
 name = "swim"
-version = "1.1.0"
+version = "1.1.5"
 edition = "2021"
 description = "A Simple WIndow Manager written in rust."
 long_description = "SWIM is a Tiling Window Manager written in rust using the Penrose crate, designed for a 'it just works' model."
