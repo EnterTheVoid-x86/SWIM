@@ -41,13 +41,13 @@ pub const LAUNCHER: &str = "dmenu_run";
 pub const PATH_TO_START_SCRIPT: &str = "bash /etc/swim/startup";
 
 fn main() -> penrose::Result<()> {
-    println!("Welcome to SWIM v1.1.0.");
+    println!("Welcome to SWIM v1.1.5.");
     if let Err(e) = SimpleLogger::init(LevelFilter::Info, simplelog::Config::default()) {
         panic!("unable to set log level: {}", e);
     };
     // Define core parts of the window manager
     let gap_size = 10;
-    let side_stack_layout = Layout::new("SWIM v1.1.0 [[]=]", LayoutConf::default(), side_stack, 1, 0.6);
+    let side_stack_layout = Layout::new("SWIM v1.1.5 [[]=]", LayoutConf::default(), side_stack, 1, 0.6);
     let config = Config::default()
         .builder()
 	    .gap_px(gap_size)
@@ -62,11 +62,11 @@ fn main() -> penrose::Result<()> {
         font: PROFONT.to_string(),
         point_size: 11,
         fg: Color::try_from(colors::WHITE)?,
-        bg: Some(Color::try_from(colors::BLACK)?),
+        bg: Some(Color::try_from(colors::GREY)?),
         padding: (2.0, 2.0),
     };
 
-    let empty_ws = Color::try_from(colors::GREY)?;
+    let empty_ws = Color::try_from(colors::WHITE)?;
     let draw = XcbDraw::new()?;
 
     let bar = dwm_bar(
@@ -107,7 +107,7 @@ fn main() -> penrose::Result<()> {
         "M-l" => run_internal!(update_main_ratio, More);
         "M-h" => run_internal!(update_main_ratio, Less);
         "F10" => run_external!("pavucontrol-qt");
-
+        "F1" => run_external!("swimkeybinds");
         // Workspace mapping
         map: { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" } to index_selectors(10) => {
              "M-{}" => focus_workspace (REF);

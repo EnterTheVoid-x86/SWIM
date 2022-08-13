@@ -4,11 +4,14 @@ pub const PROFONT: &str = "Fira Code Nerd Font";
 
 pub mod colors {
     pub const BLACK: &str = "#000000";
-    pub const GREY: &str = "#808080";
+    pub const GREY: &str = "#3B4252";
     pub const WHITE: &str = "#ffffff";
-    pub const PURPLE: &str = "#a020f0";
-    pub const BLUE: &str = "#0000ff";
-    pub const RED: &str = "#ff0000";
+    pub const PURPLE: &str = "#B48EAD";
+    pub const BLUE: &str = "#5E81AC";
+    pub const RED: &str = "#BF616A";
+    pub const GREEN: &str = "#A3BE8C";
+    pub const YELLOW: &str = "#EBCB8B";
+    pub const ORANGE: &str = "#D08770";
 }
 
 pub mod dimensions {
