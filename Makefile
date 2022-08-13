@@ -21,7 +21,8 @@ install:
 	sudo cp swimkeybinds /usr/bin/swimkeybinds
 	sudo cp keybinds /usr/bin/keybinds
 	sudo cp SWIM.desktop /usr/share/xsessions/
-
+	sudo mkdir /etc/swim/
+	sudo cp startup /etc/swim/
 all: build install
  
 help:
